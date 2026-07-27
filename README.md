@@ -14,3 +14,8 @@ Navigation vers la page 2 : https://www.blogdumoderateur.com/page/2/.
     Nombre d'articles par page = 15 dans articles.
 
 NOTE: J'AI CHANGER L'URL PAR "https://www.blogdumoderateur.com/articles" PARCE QUE LES DONNEES SONT PLUS PROPRES
+
+Pour creer venv:
+    py -m venv .venv 
+    .venv\Scripts\activate
+    pip install -r requirements.txt
