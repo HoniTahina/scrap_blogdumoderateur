@@ -61,5 +61,5 @@ while len(articles) < TARGET:
     page += 1
     time.sleep(DELAY)  # délai entre requêtes
 df = pd.DataFrame(articles)
-df.to_csv("articles.csv", index=False, encoding="utf-8-sig")
+df.to_csv("articles_200_v.0.csv", index=False, encoding="utf-8-sig")
 print(f"Export terminé : {len(df)} lignes")
