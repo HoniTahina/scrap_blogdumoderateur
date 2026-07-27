@@ -11,24 +11,6 @@ def get_page(url: str) -> BeautifulSoup:
     r = requests.get(url, headers=HEADERS, timeout=10)
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
- 
-# def parse_articles(soup: BeautifulSoup) -> list[dict]:
-#     articles = []
-#     for card in soup.select("article"):
-#         titre = card.select_one("header.entry-header h3.entry-title")
-#         url = card.select_one("header.entry-header a")
-#         date = card.select_one("time.entry-date")
-#         categorie= card.select_one(".favtag")
-#         chapeau = card.select_one(".entry-excerpt")
-
-#         articles.append({
-#             "titre": titre.get_text(strip=True) if titre else None,
-#             "url": url["href"] if url else None,
-#             "date": date["datetime"] if date else None,
-#             "categorie": categorie.get_text(strip=True) if categorie else None,
-#             "chapeau": chapeau.get_text(" ", strip=True) if chapeau else None
-#         })
-#     return articles
 
 BASE_URL = "https://www.blogdumoderateur.com/articles/page/{n}/"
 MAX = 200
@@ -45,8 +27,7 @@ def scrape_all(max_articles=MAX) -> list[dict]:
         tous.extend(nouveaux)
         print(f"Page {page} => {len(nouveaux)} articles | total={len(tous)}")
         page += 1
-        time.sleep(1.5)
-    tous.sort(key=lambda a: a["date"], reverse=True)
+        time.sleep(1.5) 
     return tous[:max_articles]
 def get_page(url: str, tries: int = 3) -> BeautifulSoup:
     for attempt in range(tries):
