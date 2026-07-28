@@ -5,13 +5,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os, time, json
+from selenium.common.exceptions import NoSuchElementException
 
 url = "https://www.doctolib.fr"
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(options=chrome_options)
-wait = WebDriverWait(driver, 15)
+wait = WebDriverWait(driver, 10)
 driver.get(url)
 
 try:
@@ -86,31 +87,84 @@ except Exception as e:
     driver.save_screenshot("screenshots/doctolib_erreur.png")
     raise RuntimeError(f"Resultats non charges : {e}")
 
+def extraire_creneaux(carte) -> list:
+    conteneurs = carte.find_elements(By.CSS_SELECTOR, "[data-test-id='availabilities-container']")
+    if not conteneurs:
+        return []
+
+    pills = conteneurs[0].find_elements(By.CSS_SELECTOR, "[data-design-system-component='Pill']")
+    creneaux = []
+    for pill in pills:
+        texte_complet = pill.get_attribute("textContent") or ""
+
+        # on retire le texte cache (sr-only), ex: "Apres-midi", pour ne pas le coller au texte visible
+        sr_textes = [
+            sr.get_attribute("textContent").strip()
+            for sr in pill.find_elements(By.CSS_SELECTOR, ".sr-only")
+        ]
+        texte_visible = texte_complet
+        for sr in sr_textes:
+            texte_visible = texte_visible.replace(sr, "")
+        texte_visible = texte_visible.strip()
+
+        if texte_visible:
+            if sr_textes:
+                creneaux.append(f"{texte_visible} ({sr_textes[0]})")
+            else:
+                creneaux.append(texte_visible)
+
+    return creneaux[:3]
+
+
 def extraire_medecins(driver) -> list[dict]:
-    cartes = driver.find_elements(By.CSS_SELECTOR, "div[class='dl-card-content']")
+    cartes = driver.find_elements(By.CSS_SELECTOR, "div.dl-card-content")
     resultats = []
-    for carte in cartes[:10]: # limiter a 10
+    for i, carte in enumerate(cartes[:11]):
         try:
-            nom = carte.find_element(By.CSS_SELECTOR, "h2[class*='dl-text-body']").text.strip()
-            adr = carte.find_element(By.CSS_SELECTOR, "p[class*='text-bf-UcI']").text.strip()
-            url_el = carte.find_element(By.CSS_SELECTOR, "a[href*='/praticien/']")
+            nom = carte.find_element(By.CSS_SELECTOR, "h2").text.strip()
+        except NoSuchElementException:
+            # Pas un vrai medecin (carte sponsorisee, bandeau, etc.) -> on ignore silencieusement
+            continue
+
+        try:
+            specialite = carte.find_element(By.CSS_SELECTOR, "p[class*='text-bf_UcI']").text.strip()
+            nom_specialite = f"{nom} - {specialite}"
+
+            adr = "n/a"
+            icones_adresse = carte.find_elements(By.CSS_SELECTOR, "svg[aria-label='Adresse']")
+            if icones_adresse:
+                conteneur = icones_adresse[0].find_element(
+                    By.XPATH, "./ancestor::div[contains(@class,'gap-8')][1]"
+                )
+                lignes = conteneur.find_elements(By.CSS_SELECTOR, "p")
+                adr = ", ".join(l.text.strip() for l in lignes if l.text.strip())
+
+            url_el = carte.find_element(By.CSS_SELECTOR, "a[href^='/']")
             url = url_el.get_attribute("href")
-            creneaux = [
-                el.text.strip()
-                for el in carte.find_elements(By.CSS_SELECTOR, "[class*='slot']")[:3]
-            ]
-            types = [
-                el.text.strip()
-                for el in carte.find_elements(By.CSS_SELECTOR, "[class*='consultation-mode']")
-            ]
+
+            creneaux = extraire_creneaux(carte)
+
+            a_cabinet = len(carte.find_elements(By.CSS_SELECTOR, "svg[data-icon-name*='location-dot']")) > 0
+            a_video = len(carte.find_elements(By.CSS_SELECTOR, "svg[data-icon-name*='video']")) > 0
+            if a_cabinet and a_video:
+                types = ["Cabinet", "Video"]
+            elif a_video:
+                types = ["Video"]
+            elif a_cabinet:
+                types = ["Cabinet"]
+            else:
+                types = ["n/a"]
+
             resultats.append({
-                "nom_specialite": nom, "adresse": adr,
-                "type_consultation": types or ["n/a"],
-                "prochains_creneaux": creneaux,
+                "nom_specialite": nom_specialite,
+                "adresse": adr,
+                "type_consultation": types,
+                "prochains_creneaux": creneaux or ["n/a"],
                 "url_fiche": url,
             })
         except Exception as e:
-            print(f"Carte ignoree : {e}")
+            print(f"Carte {i} ('{nom}') ignoree apres nom : {e.__class__.__name__}")
+
     return resultats
 medecins = extraire_medecins(driver)
 driver.quit()

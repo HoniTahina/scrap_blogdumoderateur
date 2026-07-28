@@ -1,0 +1,112 @@
+[
+  {
+    "nom_specialite": "Mme Daisy NIOLLET-BOURY - Étudiant chirurgien-dentiste",
+    "adresse": "1020 Rue Marius Petipa, 34080 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/etudiant-chirurgien-dentiste/montpellier/daisy-niollet-boury?pid=practice-227746&phs=true&page=1"
+  },
+  {
+    "nom_specialite": "Centre dentaire ORALYS - Centre dentaire",
+    "adresse": "105 Avenue du Lauragais, 34080 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/centre-dentaire/montpellier/centre-dentaire-oralys?pid=practice-431967&phs=true&page=1&index=1&speciality_ids%5B%5D=1"
+  },
+  {
+    "nom_specialite": "Dr CHARLES SETRUK - Chirurgien-dentiste",
+    "adresse": "974 Avenue du Pirée, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/montpellier/charles-setruk?pid=practice-511818&phs=true&page=1&index=2"
+  },
+  {
+    "nom_specialite": "Dr Ariadna GALA SALAS - Chirurgien-dentiste",
+    "adresse": "174 Impasse du Mas Argelliers, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/lescar/ariadna-gala-salas?pid=practice-702159&phs=true&page=1&index=3"
+  },
+  {
+    "nom_specialite": "Centre de santé Euromédecine - Centre de santé",
+    "adresse": "50 Rue du Grand Saint-Jean, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/centre-de-sante/montpellier/centre-de-sante-euromedecine-montpellier?pid=practice-41030&phs=true&page=1&index=4&speciality_ids%5B%5D=1"
+  },
+  {
+    "nom_specialite": "Dr Imen Djeridi - Chirurgien-dentiste",
+    "adresse": "211 Rue Marius Carrieu, 34080 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/montpellier/imen-djeridi?pid=practice-643223&phs=true&page=1&index=5"
+  },
+  {
+    "nom_specialite": "Dr Houriya ZOUHTANE - Chirurgien-dentiste",
+    "adresse": "174 Impasse du Mas Argelliers, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/lyon/houriya-zouhtane?pid=practice-702159&phs=true&page=1&index=6"
+  },
+  {
+    "nom_specialite": "Dr Paula CUNHA - Chirurgien-dentiste",
+    "adresse": "49B Avenue Georges Clemenceau, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/montpellier/paula-cunha-montpellier?pid=practice-118234&phs=true&page=1&index=7"
+  },
+  {
+    "nom_specialite": "Dr JEAN CHRISTOPHE BONNET - Chirurgien-dentiste",
+    "adresse": "16 Place du Millénaire, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/montpellier/jean-christophe-bonnet?pid=practice-186566&phs=true&page=1&index=8"
+  },
+  {
+    "nom_specialite": "Dr Sarah EL MEAOUI - Chirurgien-dentiste",
+    "adresse": "15 Rue du Faubourg de Nîmes, 34000 Montpellier",
+    "type_consultation": [
+      "Cabinet"
+    ],
+    "prochains_creneaux": [
+      "n/a"
+    ],
+    "url_fiche": "https://www.doctolib.fr/dentiste/montpellier/sarah-el-meaoui?pid=practice-371195&phs=true&page=1&index=9"
+  }
+]
