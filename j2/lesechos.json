@@ -8,49 +8,81 @@
     "premium": false
   },
   {
-    "titre": "Accidents du travail : la potion amère",
-    "url": "https://www.lesechos.fr/economie-france/social/exclusif-accidents-du-travail-comment-le-gouvernement-veut-economiser-800-millions-deuros-2244713",
-    "rubrique": "Social",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "L'industrie à l'épreuve du feu \nPREMIUM",
-    "url": "https://www.lesechos.fr/industrie-services/industrie-lourde/defense-aeronautique-energie-ou-chimie-face-aux-incendies-de-gironde-lindustrie-francaise-en-premiere-ligne-2244631",
-    "rubrique": "Industrie lourde",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "Netanyahou à quitte ou Trump",
-    "url": "https://www.lesechos.fr/monde/afrique-moyen-orient/a-washington-netanyahou-va-tenter-de-convaincre-trump-de-relancer-la-guerre-contre-liran-2244632",
-    "rubrique": "Afrique & Moyen-Orient",
+    "titre": "Incendies : une flambée de solidarité inédite",
+    "url": "https://www.lesechos.fr/politique-societe/societe/la-cest-colossal-par-rapport-a-dhabitude-face-aux-incendies-un-elan-de-solidarite-inedit-pour-les-cagnottes-en-ligne-2244797",
+    "rubrique": "Société",
     "chapeau": "",
     "heure_publi": "",
     "premium": false
   },
   {
-    "titre": "« J'ai divisé mon salaire par deux pour aider le plus de personnes possible »",
-    "url": "https://www.lesechos.fr/travailler-mieux/metiers-reconversion-professionnelle/jai-divise-mon-salaire-par-deux-pour-aider-le-plus-de-personnes-possible-le-pari-de-romain-pour-maximiser-son-impact-2244644",
-    "rubrique": "Métiers & reconversion professionnelle",
+    "titre": "En Bourse, la tech sous haute pression \nPREMIUM",
+    "url": "https://www.lesechos.fr/finance-marches/marches-financiers/les-valeurs-de-la-tech-fragilisees-en-bourse-avant-une-fin-de-semaine-a-haut-risque-2244799",
+    "rubrique": "Marchés financiers",
     "chapeau": "",
     "heure_publi": "",
     "premium": true
   },
   {
-    "titre": "Elon Musk compte sur X",
-    "url": "https://www.lesechos.fr/tech-medias/hightech/avec-x-money-elon-musk-se-lance-dans-les-services-bancaires-2244646",
+    "titre": "Produits bio importés : l’UE dresse sa liste noire \nPREMIUM",
+    "url": "https://www.lesechos.fr/industrie-services/conso-distribution/bananes-the-soja-leurope-prepare-sa-liste-noire-du-bio-importe-2244758",
+    "rubrique": "Conso & Distribution",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": true
+  },
+  {
+    "titre": "Et les placements les plus rentables sur 5 ans sont...",
+    "url": "https://www.lesechos.fr/patrimoine/placement/immobilier-actions-obligations-or-quels-sont-les-placements-les-plus-rentables-depuis-la-crise-du-covid-2244756",
+    "rubrique": "Placement",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": true
+  },
+  {
+    "titre": "La gastronomie italienne en alerte canicule \nPREMIUM",
+    "url": "https://www.lesechos.fr/industrie-services/conso-distribution/riz-tomates-ble-dur-les-produits-star-du-made-in-italy-a-lepreuve-du-choc-climatique-2244786",
+    "rubrique": "Conso & Distribution",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": true
+  },
+  {
+    "titre": "Vers un nouveau « drone deal » entre Kiev et Washington",
+    "url": "https://www.lesechos.fr/monde/europe/drones-le-partenariat-industriel-entre-lukraine-et-les-etats-unis-prend-forme-2244729",
+    "rubrique": "Europe",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": false
+  },
+  {
+    "titre": "Téléphonie mobile : Amazon prêt au décollage \nPREMIUM",
+    "url": "https://www.lesechos.fr/tech-medias/hightech/plus-de-5000-satellites-en-orbite-basse-amazon-lance-sa-bataille-avec-starlink-sur-le-mobile-2244784",
     "rubrique": "High Tech",
     "chapeau": "",
     "heure_publi": "",
     "premium": true
   },
   {
-    "titre": "La grande braderie des sanctuaires américains",
-    "url": "https://www.lesechos.fr/monde/etats-unis/lequivalent-de-70-grand-canyon-comment-ladministration-trump-brade-les-sanctuaires-naturels-americains-2244565",
-    "rubrique": "États-Unis",
+    "titre": "A brand new Spider-Man",
+    "url": "https://www.lesechos.fr/weekend/cinema-series/spider-man-brand-new-day-lame-de-laraignee-2244790",
+    "rubrique": "Cinéma & Séries",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": false
+  },
+  {
+    "titre": "Les Echos - Cashflow - Caterpillar_VDEF",
+    "url": "https://geo.dailymotion.com/player.html?video=xasx9nq",
+    "rubrique": "",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": false
+  },
+  {
+    "titre": "Accidents du travail : la potion amère",
+    "url": "https://www.lesechos.fr/economie-france/social/exclusif-accidents-du-travail-comment-le-gouvernement-veut-economiser-800-millions-deuros-2244713",
+    "rubrique": "Social",
     "chapeau": "",
     "heure_publi": "",
     "premium": true
@@ -80,49 +112,9 @@
     "premium": true
   },
   {
-    "titre": "FireTracking, la nouvelle vigie \nPREMIUM",
-    "url": "https://www.lesechos.fr/start-up/impact/nous-detectons-plus-de-95-des-departs-de-feu-la-start-up-firetracking-au-service-de-la-lutte-contre-les-incendies-qui-frappent-la-france-2244545",
-    "rubrique": "Impact",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "Huge funds ! \nPREMIUM",
-    "url": "https://www.lesechos.fr/finance-marches/gestion-actifs/comment-les-hedge-funds-ont-connu-un-succes-record-au-deuxieme-trimestre-2244586",
-    "rubrique": "Gestion d'actifs",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "Zidane, sélectionneur... de bonnes affaires \nPREMIUM",
-    "url": "https://www.lesechos.fr/industrie-services/tourisme-transport/zidane-le-futur-selectionneur-des-bleus-qui-affole-les-compteurs-2244588",
-    "rubrique": "Tourisme - Transport",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "Le retour du roi",
-    "url": "https://www.lesechos.fr/idees-debats/en-vue/zinedine-zidane-le-retour-du-roi-2244635",
-    "rubrique": "En vue",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": false
-  },
-  {
-    "titre": "Immobilier : le littoral revient sur terre",
-    "url": "https://www.lesechos.fr/patrimoine/immobilier/immobilier-pourquoi-la-ruee-vers-les-cotes-a-t-elle-fortement-ralenti-depuis-2023-2244429",
-    "rubrique": "Immobilier",
-    "chapeau": "",
-    "heure_publi": "",
-    "premium": true
-  },
-  {
-    "titre": "AstraZeneca : la cardiologie en cœur de cible \nPREMIUM",
-    "url": "https://www.lesechos.fr/industrie-services/pharmacie-sante/innover-en-cardiologie-laudacieux-pari-dastrazeneca-2244544",
-    "rubrique": "Pharmacie & Santé",
+    "titre": "French Tech : le nouveau Top 10 des investisseurs les plus actifs \nPREMIUM",
+    "url": "https://www.lesechos.fr/start-up/ecosysteme/drysdale-blast-y-combinator-qui-sont-les-investisseurs-les-plus-actifs-en-france-au-premier-semestre-2244782",
+    "rubrique": "Ecosystème",
     "chapeau": "",
     "heure_publi": "",
     "premium": true
@@ -155,6 +147,14 @@
     "titre": "Les « forward deployed engineers », la nouvelle lubie des start-up d'IA",
     "url": "https://www.lesechos.fr/tech-medias/intelligence-artificielle/ca-veut-dire-dormir-dans-des-hotels-de-zones-industrielles-etre-la-a-5-heures-du-matin-et-coder-en-plein-milieu-de-la-nuit-les-forward-deployed-engineers-la-nouvelle-lubie-des-start-up-dia-2243824",
     "rubrique": "Intelligence artificielle",
+    "chapeau": "",
+    "heure_publi": "",
+    "premium": true
+  },
+  {
+    "titre": "Intelligence artificielle : pourquoi les entreprises françaises peinent à franchir le cap \nPREMIUM",
+    "url": "https://www.lesechos.fr/industrie-services/services-conseils/intelligence-artificielle-pourquoi-les-entreprises-francaises-peinent-a-franchir-le-cap-2243557",
+    "rubrique": "Services & Conseils",
     "chapeau": "",
     "heure_publi": "",
     "premium": true
