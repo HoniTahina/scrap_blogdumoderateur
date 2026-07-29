@@ -1,13 +1,10 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
+# items.py
+import scrapy
 
-from dataclasses import dataclass
-
-
-@dataclass
-class AllocineItem:
-    # define the fields for your item here like:
-    # name: str | None = None
-    pass
+class FilmItem(scrapy.Item):
+    titre = scrapy.Field()
+    annee = scrapy.Field()
+    realisateur = scrapy.Field()
+    note_presse = scrapy.Field()
+    note_spectateurs = scrapy.Field()
+    url = scrapy.Field()

@@ -7,6 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+DEFAULT_REQUEST_HEADERS = {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "fr-FR,fr;q=0.9",
+}
 BOT_NAME = "allocine"
 
 SPIDER_MODULES = ["allocine.spiders"]
@@ -16,7 +20,7 @@ ADDONS = {}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "allocine (+http://www.yourdomain.com)"
+USER_AGENT = "IPSSI-scraper (+contact@ipssi.fr)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -84,4 +88,20 @@ DOWNLOAD_DELAY = 1
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
+FEEDS = {
+    "films.json": {"format": "json", "encoding": "utf8", "indent": 2},
+    "films.csv": {"format": "csv", "encoding": "utf8"},
+}
 FEED_EXPORT_ENCODING = "utf-8"
+RANDOMIZE_DOWNLOAD_DELAY =True
+# variation ±50 %# Concurrence
+CONCURRENT_REQUESTS =8 
+CONCURRENT_REQUESTS_PER_DOMAIN =4
+# Auto-throttling adaptatif
+AUTOTHROTTLE_ENABLED =True 
+AUTOTHROTTLE_START_DELAY =1.0 
+AUTOTHROTTLE_MAX_DELAY =10.0# Retry & erreurs 
+RETRY_ENABLED =True 
+RETRY_TIMES =3 
+RETRY_HTTP_CODES = [500, 502, 503, 429] # Activer les pipelines (ordre = priorité) 
+ITEM_PIPELINES = { "allocine.pipelines.CleanPipeline": 100 }
