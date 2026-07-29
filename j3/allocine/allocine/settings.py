@@ -105,3 +105,4 @@ RETRY_ENABLED =True
 RETRY_TIMES =3 
 RETRY_HTTP_CODES = [500, 502, 503, 429] # Activer les pipelines (ordre = priorité) 
 ITEM_PIPELINES = { "allocine.pipelines.CleanPipeline": 100 }
+STATS_DUMP = True
