@@ -58,9 +58,11 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "veille.pipelines.VeillePipeline": 300,
-#}
+# veille/settings.py
+ITEM_PIPELINES = {
+    "veille.pipelines.CleanPipeline" : 100,
+    "veille.pipelines.SQLitePipeline": 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -85,3 +87,6 @@ DOWNLOAD_DELAY = 1
 
 # Set settings whose default value is deprecated to a future-proof value
 FEED_EXPORT_ENCODING = "utf-8"
+FEEDS = {
+    "mentions.csv": {"format":"csv","encoding":"utf-8","overwrite":True},
+}

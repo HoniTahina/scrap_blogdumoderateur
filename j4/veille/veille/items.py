@@ -1,13 +1,8 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
-from dataclasses import dataclass
-
-
-@dataclass
-class VeilleItem:
-    # define the fields for your item here like:
-    # name: str | None = None
-    pass
+import scrapy
+class MentionItem(scrapy.Item):
+ titre = scrapy.Field()
+ url = scrapy.Field()
+ source = scrapy.Field()
+ date_publi = scrapy.Field()
+ resume = scrapy.Field()
+ score_alerte = scrapy.Field() # 0=neutre 1=negatif 2=positif
