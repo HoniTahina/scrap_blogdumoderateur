@@ -1,0 +1,177 @@
+[
+{
+  "libelle": "JCDECAUX",
+  "cours": 22.5,
+  "variation": 1.9,
+  "volume": 98373,
+  "isin": "FR0000077919"
+},
+{
+  "libelle": "IPSOS",
+  "cours": 42.7,
+  "variation": 1.91,
+  "volume": 62061,
+  "isin": "FR0000073298"
+},
+{
+  "libelle": "VICAT",
+  "cours": 62.9,
+  "variation": 1.94,
+  "volume": 29040,
+  "isin": "FR0000031775"
+},
+{
+  "libelle": "MAUREL & PROM",
+  "cours": 8.08,
+  "variation": 1.96,
+  "volume": 87884,
+  "isin": "FR0000051070"
+},
+{
+  "libelle": "EMEIS",
+  "cours": 13.875,
+  "variation": 2.02,
+  "volume": 43281,
+  "isin": null
+},
+{
+  "libelle": "VIVENDI",
+  "cours": 2.026,
+  "variation": 2.07,
+  "volume": 477069,
+  "isin": "FR0000127771"
+},
+{
+  "libelle": "ERAMET",
+  "cours": 43.1,
+  "variation": 2.18,
+  "volume": 16568,
+  "isin": "FR0000131757"
+},
+{
+  "libelle": "CLARIANE",
+  "cours": 4.062,
+  "variation": 2.42,
+  "volume": 102021,
+  "isin": "FR0010386334"
+},
+{
+  "libelle": "STELLANTIS",
+  "cours": 5.194,
+  "variation": 2.43,
+  "volume": 3238616,
+  "isin": null
+},
+{
+  "libelle": "DBV TECHNOLOGIES",
+  "cours": 2.43,
+  "variation": 2.45,
+  "volume": 446519,
+  "isin": "FR0010417345"
+},
+{
+  "libelle": "TELEPERFORMANCE",
+  "cours": 61.48,
+  "variation": 2.47,
+  "volume": 101910,
+  "isin": "FR0000051807"
+},
+{
+  "libelle": "RENAULT",
+  "cours": 27.82,
+  "variation": 2.47,
+  "volume": 436454,
+  "isin": "FR0000131906"
+},
+{
+  "libelle": "TOTALENERGIES",
+  "cours": 75.64,
+  "variation": 2.52,
+  "volume": 1279009,
+  "isin": "FR0000120271"
+},
+{
+  "libelle": "WENDEL",
+  "cours": 84.15,
+  "variation": 3.06,
+  "volume": 16741,
+  "isin": "FR0000121204"
+},
+{
+  "libelle": "NEXANS",
+  "cours": 128.0,
+  "variation": 3.14,
+  "volume": 145007,
+  "isin": "FR0000044448"
+},
+{
+  "libelle": "GTT (GAZTRANSPORT ET TEC.)",
+  "cours": 192.1,
+  "variation": 3.28,
+  "volume": 44657,
+  "isin": "FR0011726835"
+},
+{
+  "libelle": "SEB",
+  "cours": 59.45,
+  "variation": 3.3,
+  "volume": 48295,
+  "isin": "FR0000121709"
+},
+{
+  "libelle": "CAPGEMINI",
+  "cours": 106.35,
+  "variation": 4.57,
+  "volume": 508509,
+  "isin": "FR0000125338"
+},
+{
+  "libelle": "MEDINCELL",
+  "cours": 26.46,
+  "variation": 4.83,
+  "volume": 120061,
+  "isin": "FR0004065605"
+},
+{
+  "libelle": "VUSION",
+  "cours": 136.9,
+  "variation": 5.07,
+  "volume": 38359,
+  "isin": "FR0010282822"
+},
+{
+  "libelle": "ATOS GROUP",
+  "cours": 33.98,
+  "variation": 6.45,
+  "volume": 124299,
+  "isin": null
+},
+{
+  "libelle": "BUREAU VERITAS",
+  "cours": 29.7,
+  "variation": 8.71,
+  "volume": 1280153,
+  "isin": "FR0006174348"
+},
+{
+  "libelle": "KERING",
+  "cours": 285.55,
+  "variation": 13.99,
+  "volume": 513382,
+  "isin": "FR0000121485"
+},
+{
+  "libelle": "SOPRA STERIA",
+  "cours": 198.95,
+  "variation": 15.53,
+  "volume": 174336,
+  "isin": "FR0000050809"
+},
+{
+  "libelle": "ALTEN",
+  "cours": 79.65,
+  "variation": 19.24,
+  "volume": 192015,
+  "isin": "FR0000071946"
+}
+]

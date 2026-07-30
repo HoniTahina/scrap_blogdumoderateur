@@ -1,4 +1,4 @@
-# Scrapy settings for Boursorama project
+# Scrapy settings for veille project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,16 +7,16 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "Boursorama"
+BOT_NAME = "veille"
 
-SPIDER_MODULES = ["Boursorama.spiders"]
-NEWSPIDER_MODULE = "Boursorama.spiders"
+SPIDER_MODULES = ["veille.spiders"]
+NEWSPIDER_MODULE = "veille.spiders"
 
 ADDONS = {}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "IPSSI-scraper (+contact@ipssi.fr)"
+#USER_AGENT = "veille (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -41,13 +41,13 @@ DOWNLOAD_DELAY = 1
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "Boursorama.middlewares.BoursoramaSpiderMiddleware": 543,
+#    "veille.middlewares.VeilleSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "Boursorama.middlewares.BoursoramaDownloaderMiddleware": 543,
+#    "veille.middlewares.VeilleDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -58,17 +58,17 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-    "Boursorama.pipelines.SQLitePipeline": 300,
-}
+#ITEM_PIPELINES = {
+#    "veille.pipelines.VeillePipeline": 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-AUTOTHROTTLE_ENABLED = True
+#AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-AUTOTHROTTLE_START_DELAY = 1
+#AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-AUTOTHROTTLE_MAX_DELAY = 10
+#AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
@@ -85,9 +85,3 @@ AUTOTHROTTLE_MAX_DELAY = 10
 
 # Set settings whose default value is deprecated to a future-proof value
 FEED_EXPORT_ENCODING = "utf-8"
-
-# Export vers JSON et CSV
-FEEDS = {
-    "actions.json": {"format": "json", "encoding": "utf8", "indent": 2},
-    "actions.csv": {"format": "csv", "encoding": "utf8"},
-}

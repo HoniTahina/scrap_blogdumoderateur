@@ -1,0 +1,33 @@
+{
+  "domaine": "atos.net",
+  "ip": "79.99.39.104",
+  "whois": {
+    "registrar": "CSC Corporate Domains, Inc.",
+    "creation_date": "1997-06-06",
+    "expiration_date": "2027-06-05",
+    "name_servers": [
+      "NS1.SBS-INTER.NET",
+      "NS2.SBS-INTER.NET",
+      "NS1-EXT.MY-IT-SOLUTIONS.NET",
+      "NS2.ATOS-SERVICES.NET",
+      "NS1.ATOS-SERVICES.NET",
+      "NS2-EXT.MY-IT-SOLUTIONS.NET",
+      "NS2.ATOS.FR",
+      "NS1.ATOS.FR"
+    ],
+    "country": "n/a"
+  },
+  "headers_http": {
+    "status": 200,
+    "server": "n/a",
+    "x_powered_by": "n/a",
+    "x_frame_options": "n/a",
+    "csp_present": true,
+    "hsts_present": true
+  },
+  "sous_domaines": [
+    "ERREUR apres 3 tentatives"
+  ],
+  "robots_txt": "User-agent: *\nDisallow: /demo/*\nSitemap: https://atos.net/sitemap_index.xml\n",
+  "nb_sous_domaines": 1
+}
